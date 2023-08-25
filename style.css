@@ -1,0 +1,294 @@
+body {
+  font-family: "Helvetica";
+  margin: 0px;
+  background-color: var(--neutral01);
+}
+h1 {
+  font-size: 36px !important;
+}
+h2 {
+  font-size: 24px !important;
+}
+h3 {
+  font-size: 16px !important;
+}
+p {
+  font-size: 14px !important;
+}
+
+/* Design Systen Color */
+:root {
+  /* Color Style Primary */
+  --darkblue01: #cfd4ed;
+  --darkblue02: #aeb7e1;
+  --darkblue03: #5e70c4;
+  --darkblue04: #0d28a6;
+  --darkblue05: #091b6f;
+
+  --limegreen01: #def1df;
+  --limegreen02: #c9e7ca;
+  --limegreen03: #92d094;
+  --limegreen04: #5cb85f;
+  --limegreen05: #3d7b3f;
+
+  /* Color Style Neutral*/
+  --neutral01: #ffffff;
+  --neutral02: #d0d0d0;
+  --neutral03: #8a8a8a;
+  --neutral04: #3c3c3c;
+  --neutral05: #151515;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--neutral01);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nav-item a {
+  color: black;
+}
+.btn-primer {
+  background-color: var(--limegreen04);
+  color: var(--neutral01) !important;
+}
+.btn-primer:hover {
+  background-color: var(--limegreen04);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--darkblue01);
+  height: 504px;
+}
+.img-car {
+  width: 44rem;
+  top: 100px;
+}
+
+.text-content {
+  margin-top: 90px;
+}
+
+.checklist p img {
+  margin-right: 1rem;
+}
+
+/* Why Us Section */
+
+.cardGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardWhy {
+  width: 268px;
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-02, #d0d0d0);
+  padding: 1rem;
+ 
+}
+
+.cardWhy img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 15px;
+}
+.whyUs-section .card-title {
+  font-size: 1rem;
+}
+.whyUs-section .card-text {
+  font-size: 0.875rem;
+}
+
+/* Testimonial Section */
+.carousel-testimonial {
+  display: flex;
+}
+
+.card-carousel {
+  width: 38.6875rem;
+  height: 16.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 10px;
+  background-color: #f1f3ff;
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-carousel img {
+  width: 5rem !important;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+
+svg:hover circle {
+  fill: var(
+    --limegreen04
+  ); 
+}
+svg:hover path {
+  stroke: var(--neutral01); /
+}
+
+/* Big Card */
+
+.bigCard {
+  background-color: var(--darkblue04);
+  color: var(--neutral01);
+  height: 20.375rem;
+}
+
+.bigCard,
+.bigCard-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigCard-body h1 {
+  font-size: 36px;
+}
+
+.bigCard-body p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn-sewaMobil {
+  background-color: var(--limegreen04) !important;
+  color: var(--neutral01);
+}
+
+/* FAQ */
+.accordion-button {
+  width: 41.75rem;
+  height: 3.5rem;
+  margin-top: 20px;
+  border-radius: 0.25rem !important;
+  border: 1px solid #d4d4d4;
+}
+
+.my-owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-owl-nav span {
+  padding: 7px;
+}
+
+.my-owl-nav span:hover {
+  cursor: pointer;
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 365.98px) {
+ 
+  .offcanvas {
+    width: 50% !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 0px !important;
+  }
+  .text-hero{
+    margin-top: 65px !important;
+  }
+  .text-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: 0px !important;
+  }
+
+.text-content p {
+  margin-right: 0px !important;
+  margin-left: 10px !important;
+}
+  .hero-section {
+    height: 41.0625rem;
+    width: 100%;
+  }
+  .img-car {
+    /* background-color: red; */
+    width: 21.5135rem !important;
+    top: 457px !important;
+  }
+  /* Best Car */
+.img-bestCar img {
+  display: flex !important;
+  align-items: center !important;
+  margin-right: 0px !important;
+  width: 252px;
+  height: 228px;
+}
+.bestCar-text {
+  margin-left: 10px !important;
+}
+/* Why Us */
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem !important;
+}
+.whyusText{
+  text-align: center;
+}
+  /* FAQ */
+  .faq {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .accordion-mobile {
+    width: 100px;
+  }
+  .accordion-button {
+    width: 20.5rem;;
+  }
+  /* Testimonial */
+  .card-carousel {
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 15px;
+    width: 328px !important ;
+    height: 372px !important;
+    
+  }
+  .card-carousel p {
+    text-align: start;
+  }
+  /* BIG Card */
+  .bigCard {
+    width: 95%;
+    height: 400px;
+  }
+  /* Footer */
+  .footerBinar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footerNav {
+    align-content: start !important;
+    font-weight: 400 !important;
+  }
+}
